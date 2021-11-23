@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('Raleway-ExtraBold.eot');
+    src: url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-ExtraBold.woff2') format('woff2'),
+        url('Raleway-ExtraBold.woff') format('woff'),
+        url('Raleway-ExtraBold.ttf') format('truetype'),
+        url('Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway.eot');
+    src: url('Raleway.eot?#iefix') format('embedded-opentype'),
+        url('Raleway.woff2') format('woff2'),
+        url('Raleway.woff') format('woff'),
+        url('Raleway.ttf') format('truetype'),
+        url('Raleway.svg#Raleway') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ElegantIcons';
+    src: url('ElegantIcons.eot');
+    src: url('ElegantIcons.eot?#iefix') format('embedded-opentype'),
+        url('ElegantIcons.woff2') format('woff2'),
+        url('ElegantIcons.woff') format('woff'),
+        url('ElegantIcons.ttf') format('truetype'),
+        url('ElegantIcons.svg#ElegantIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('Raleway-Medium.eot');
+    src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Medium.woff2') format('woff2'),
+        url('Raleway-Medium.woff') format('woff'),
+        url('Raleway-Medium.ttf') format('truetype'),
+        url('Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,97 @@
+//.icon-base:before {
+//  background-color: $bg_col_icon_offers;
+//}
+
+.quotes{
+  padding: 80px 0 100px;
+  background-color: $bG_col_offers_active;
+  position: relative;
+
+  .container{
+    .row{
+      .carousel{
+        .carousel-inner{
+          .carousel-item{
+            text-align: center;
+            @extend %display_column;
+            opacity: 0;
+
+            .employee{
+              box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+              text-decoration: none;
+              background-color:$ct_banner_secjnd;
+              border-radius: 5px;
+              margin: 0 0 25px 0;
+              padding: 15px;
+              color: $ct_features_p;
+              font-family: $font_family_second;
+              font-size: $fs_nav_link;
+              font-style: italic;
+
+              span{
+                color: $ct_banner_marc;
+                font-family: $font_family_h1;
+                font-size: $fs_nav_link;
+                text-transform: uppercase;
+                font-style: initial;
+              }
+            }
+
+            .quotes_text{
+              max-width: 92%;
+              margin: 0 0 0 0;
+              color: $ct_banner_secjnd;
+              font-family: $font_family_basic;
+              font-size: $fs_quoter;
+              font-weight: $fw_medium;
+              line-height: $lh_quoter;
+
+              .image_left{
+                width: 3%;
+              }
+
+              .image_right{
+                width: 3%;
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          .active{
+            transition: 0.3s;
+            opacity: 1;
+          }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next{
+          position: absolute;
+          top: initial;
+          bottom: -50px;
+          display: initial;
+          padding: 0;
+          margin: 0;
+          opacity: 1;
+          color: #ff000000;
+          width: 1%;
+
+          span{
+            background-image: none;
+            img{
+              transform: rotate(180deg);
+              width: 100%;
+            }
+          }
+        }
+
+        .carousel-control-prev{
+          left: 48%;
+        }
+
+        .carousel-control-next{
+         left: 52%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.header {
+  .banner {
+    padding: 220px 0;
+    background-color: $bg_col_banner;
+
+    .container {
+      .row {
+        .col-xxl-6 {
+          text-align: center;
+
+          .banner_p_top {
+            color: $ct_banner_main;
+            font-family: $font_family_second;
+            font-size: $fs_banner_p;
+            font-weight: $fw_semi_bold;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+
+          h1 {
+            color: $ct_banner_main;
+            font-family: $font_family_h1;
+            font-size: $fs_banner_h1;
+            text-transform: uppercase;
+            margin: -11px 0 5px 0;
+          }
+
+          .banner_p_bot {
+            background-color: $bg_col_banner_p_bot;
+            color: $ct_banner_secjnd;
+            font-family: $font_family_basic;
+            font-size: $fs_banner_p;
+            padding: 6px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            &:first-letter {
+              color: $ct_banner_marc;
+              font-family: $font_family_second;
+              font-size: $fs_banner_fl;
+            }
+
+            .banner_p_bot_span {
+              font-family: $font_family_second;
+              font-weight: $fw_semi_bold;
+              text-transform: initial;
+            }
+          }
+
+          .headline_banner{
+            margin-bottom: 45px;
+          }
+
+          .link_anchor{
+            @extend %display_column;
+
+            .chevron_down{
+              width: 58px;
+              height: 58px;
+              border: 4px solid $bG_col_offers_active;
+              border-radius: 50%;
+
+              a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                  width: 90%;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

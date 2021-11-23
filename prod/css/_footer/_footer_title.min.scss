@@ -1,0 +1,47 @@
+.footer_title{
+  background-color: #383838;
+  padding: 50px 0 70px 0;
+
+  .container{
+
+    .row_logo{
+      @extend %display_j_center;
+      margin-bottom: 65px;
+    }
+
+    .row_icons{
+      @extend %display_j_center;
+      .col-xxl-6{
+        @extend %display_j_center;
+        div{
+          width: 44px;
+          height: 40px;
+          border: 1px solid #606060;
+          @extend %display_j_center;
+          margin: 5px;
+          border-radius: 4px;
+
+          &:hover{
+            background-color: $bG_col_offers_active;
+          }
+
+          a{
+            @extend %display_j_center;
+            img{
+              width: 50%;
+            }
+
+            .imag_sm{
+              width: 100%;
+            }
+          }
+        }
+
+        .active_icon{
+          background-color: $bG_col_offers_active;
+        }
+      }
+    }
+
+  }
+}

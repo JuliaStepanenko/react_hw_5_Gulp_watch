@@ -1,0 +1,128 @@
+.skills{
+  padding: 75px 0 25px;
+  background-color: #383838;
+  position: relative;
+
+  .container{
+
+      .skills__title{
+        .headline_main_wrapper {
+          .headline_main {
+            .style_heading {
+              @include head_line_wid(35%);
+              color: $ct_banner_secjnd;
+            }
+          }
+          p{
+            color: $ct_navigat;
+          }
+        }
+      }
+
+
+    .skills__circle {
+
+      .col-xxl-2{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        position: relative;
+
+
+        .circle_wrapper {
+          margin-bottom: 15px;
+          width: 120px;
+          height: 120px;
+          position: relative;
+
+          .circle {
+            transform: rotate(180deg);
+            position: relative;
+
+            svg {
+              position: relative;
+              width: 120px;
+              height: 120px;
+
+              circle {
+                width: 120px;
+                height: 120px;
+                fill: none;
+                stroke-width: 3;
+                stroke: $bG_col_offers_active;
+                transform: translate(2px, 2px);
+                stroke-dasharray: 350;
+                stroke-dashoffset: 350;
+
+               &:nth-child(1) {
+                stroke-dashoffset: 0;
+                stroke: $bg_col_more_fuat;
+                }
+                &.percent_75{
+                  stroke-dashoffset: calc(350 - (350 * 75) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+                &.percent_92{
+                  stroke-dashoffset: calc(350 - (350 * 92) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+                &.percent_68{
+                  stroke-dashoffset: calc(350 - (350 * 68) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+                &.percent_100{
+                  stroke-dashoffset: calc(350 - (350 * 100) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+                &.percent_83{
+                  stroke-dashoffset: calc(350 - (350 * 83) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+                &.percent_50{
+                  stroke-dashoffset: calc(350 - (350 * 50) / 100);
+                  stroke: $bG_col_offers_active;
+                }
+              }
+            }
+          }
+        }
+
+        .number{
+            position: absolute;
+            top: 50px;
+            left: 35px;
+            @extend %display_j_center;
+
+          h6{
+              color: $ct_banner_secjnd;
+              font-family: $font_family_h1;
+              font-size: 30px;
+              font-weight: 400;
+              line-height: $fs_title_stile;
+              text-align: center;
+              text-transform: uppercase;
+
+              span{
+                font-size: $fs_title_stile;
+              }
+          }
+        }
+
+        .percent_100_num{
+          left: 25px;
+        }
+
+        h4{
+          color: #8a8a8a;
+          font-family: $font_family_h1;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

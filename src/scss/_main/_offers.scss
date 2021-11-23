@@ -1,0 +1,88 @@
+.offers{
+    padding: 75px 0 65px;
+
+    .container{
+        .offers__title{
+            .headline_main{
+                .style_heading {
+                    @include head_line_wid(21%);
+                }
+            }
+        }
+
+        .offers__element{
+            .col-xxl-4{
+                @extend %display_column;
+                margin-bottom: 50px;
+
+                .icon_and_img{
+                    @extend %display_j_center;
+                    width: 100px;
+                    height: 100px;
+                    background-color: $bg_col_icon_offers;
+                    border-radius: 50%;
+                    margin-bottom: 35px;
+
+                    img{
+                        width: 50%;
+                    }
+                }
+
+                h4{
+                    color: $ct_navigat;
+                    font-family: $font_family_h1;
+                    font-size: $fs_h4_items;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    max-width: 88%;
+                    color: $ct_offers_p;
+                    font-family: $font_family_basic;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                }
+
+                div{
+                    a{
+                        padding: 11px;
+                        text-decoration: none;
+                        color: $ct_offers_link;
+                        font-family: $font_family_h1;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                        border-radius: 5px;
+                        border: 1px solid $border_col_navigation;
+                    }
+                }
+
+                .item_active,
+                &:hover{
+                    .icon_and_img{
+                        background-color: $bG_col_offers_active;
+                    }
+                    div{
+                        a{
+                            background-color: $bG_col_offers_active;
+                            color: $ct_affers_link_acttive;
+                        }
+                    }
+                }
+            }
+
+            .item_active{
+                .icon_and_img{
+                    background-color:$bG_col_offers_active;
+                }
+                div{
+                    a{
+                        background-color: $bG_col_offers_active;
+                        color: $ct_affers_link_acttive;
+                    }
+                }
+            }
+        }
+    }
+}

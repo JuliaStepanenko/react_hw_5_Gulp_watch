@@ -1,0 +1,149 @@
+.price_tables{
+  padding: 40px 0 40px 0;
+  background-color: #f9f9f9;
+
+  .container{
+
+    .price_tables__title {
+      .headline_main_wrapper {
+        .headline_main {
+          .style_heading {
+            @include head_line_wid(28%);
+          }
+        }
+      }
+    }
+
+    .row{
+      padding: 0;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-around;
+
+      .item_subscription{
+        padding: 0;
+        margin: 1px 1px 40px 1px;
+        @extend %display_column;
+        border: 1px solid $border_col_navigation;
+        width: 270px;
+
+        .subscription_plan{
+          text-decoration: none;
+          padding: 15px;
+          margin: -25px 0 20px;
+          background-color: $bg_col_icon_offers;
+          color: $ct_banner_secjnd;
+          font-family: $font_family_h1;
+          font-size: $fs_nav_link;
+          text-transform: uppercase;
+          border-radius: 5px;
+          list-style: none;
+          box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+        }
+
+        .price{
+          display: flex;
+          align-items: center;
+          margin: 0;
+          color: $ct_offers_link;
+          font-family:$font_family_basic;
+          font-size: $fs_title_stile;
+
+          .price_doll{
+            margin: -10px 0 0 10px;
+            color: $ct_banner_main;
+            font-family: $font_family_h1;
+            font-size: $fs_price;
+            text-transform: uppercase;
+          }
+
+          .price_cent{
+            margin-top: -25px;
+            color: $ct_banner_main;
+            font-family: $font_family_h1;
+            font-size: $fs_title_stile;
+          }
+
+          .romb{
+            margin: 0 10px -30px -10px;
+            display: block;
+            transform: rotate(45deg);
+            width: 12px;
+            height: 12px;
+            background-color: $bg_col_icon_offers;
+            border-radius: 3px;
+          }
+        }
+
+        .break_line{
+          width: 228px;
+          height: 1px;
+          background-color: $ct_features_p;
+          margin: 10px 0 20px 0;
+        }
+
+        ul{
+          margin: 0;
+          padding: 0;
+
+          li{
+            list-style-type: none;
+            color: #8a8a8a;
+            font-family: $font_family_basic;
+            font-size: $fs_h4_items;
+            line-height: 40px;
+          }
+        }
+
+        .subscription_link{
+          text-decoration: none;
+          margin: 0 0 20px 0;
+          display: block;
+          padding: 15px;
+          list-style: none;
+          background-color: $bG_col_offers_active;
+          border-radius: 5px;
+          box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+          color: $ct_banner_secjnd;
+          font-family: $font_family_h1;
+          font-size: $fs_nav_link;
+          text-transform: uppercase;
+        }
+
+        &:hover{
+          .subscription_plan{
+            background-color: $bG_col_offers_active;
+          }
+          .price{
+            .price_doll{
+              color: $bG_col_offers_active;
+            }
+            .price_cent{
+              color: $bG_col_offers_active;
+            }
+            .romb{
+              background-color: $bG_col_offers_active;
+            }
+          }
+        }
+      }
+
+      .active_item_price{
+          .subscription_plan{
+            background-color: $bG_col_offers_active;
+          }
+          .price{
+            .price_doll{
+              color: $bG_col_offers_active;
+            }
+            .price_cent{
+              color: $bG_col_offers_active;
+            }
+            .romb{
+              background-color: $bG_col_offers_active;
+            }
+          }
+      }
+    }
+  }
+}

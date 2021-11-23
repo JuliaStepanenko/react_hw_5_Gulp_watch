@@ -1,0 +1,55 @@
+.our_clients{
+  padding: 45px 0 25px 0;
+  background-color: $ct_banner_main;
+
+  .container{
+    .carousel{
+
+      .carousel-inner{
+        .carousel-item{
+          .row {
+            display: flex;
+            justify-content: center;
+
+            .item_carousel {
+              margin: 0 10px 20px 10px;
+              width: 270px;
+              height: 160px;
+              background-color: $bg_col_banner_p_bot;
+              @extend %display_j_center;
+
+              img {
+                background-color: $bg_col_banner_p_bot;
+              }
+            }
+          }
+        }
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next{
+        opacity: 1;
+        width: initial ;
+        display: initial;
+        span{
+          background-image: none;
+          img{
+            width: 85%;
+          }
+        }
+      }
+
+
+      .carousel-control-prev{
+        left: 0;
+        img{
+          transform: rotate(180deg);
+        }
+      }
+      .carousel-control-next{
+        right: 0;
+      }
+
+    }
+  }
+}

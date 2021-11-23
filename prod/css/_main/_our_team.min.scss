@@ -1,0 +1,181 @@
+.our_team{
+  padding: 80px 0 65px 0;
+  background-color: $bg_col_more_fuat;
+
+  .container{
+    .our_team__title{
+      .headline_main_wrapper{
+        .headline_main{
+          .style_heading {
+            @include head_line_wid(20%);
+          }
+        }
+      }
+    }
+
+    .carousel{
+      .carousel-item{
+        .row{
+          display: flex;
+          justify-content: space-around;
+          padding: 15px;
+
+          .item_carousel{
+            @extend %display_column;
+            border: 1px solid $bg_col_banner;
+            padding: 0;
+            width: 270px;
+            margin: 1px 10px 25px 10px;
+
+            .item_image{
+              width: 100%;
+              height: 260px;
+              background-color: $bg_col_banner;
+
+              .item_image_hover{
+                opacity: 1;
+                z-index: -1;
+                transition: 0.5s;
+                transform: scale(0);
+                background-color: $bG_col_offers_active;
+                @extend %display_j_center;
+                width: 100%;
+                height: 100%;
+
+                div{
+                  @extend %display_j_center;
+                  width: 30px;
+                  height: 30px;
+                  background-color: $ct_banner_secjnd;
+                  transform: rotate(45deg);
+                  border-radius: 5px;
+                  border: 1px solid $bG_col_offers_active;
+
+                  a{
+                    img{
+                      margin: 0 0 3px 1px;
+                      width: 60%;
+                      transform: rotate(315deg);
+                    }
+                  }
+                }
+
+                .active_link_twit{
+                  background-color: $ct_banner_main;
+                  opacity: 1;
+                  z-index: 1;
+                }
+
+                .link_facebook,
+                .link_twitter,
+                .link_google_plus,
+                .link_vimeo,
+                .link_dribbble{
+                  &:hover{
+                    opacity: 10;
+                    z-index: 10;
+                  }
+                }
+              }
+            }
+
+            .name_link{
+              margin: -20px;
+              display: inline-block;
+              padding: 15px;
+              text-decoration: none;
+              background-color: $bG_col_offers_active;
+              border-radius: 5px;
+              box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+              color:$ct_banner_secjnd;
+              font-family:$font_family_h1;
+              font-size: $fs_nav_link;
+              font-weight: $fw_normal;
+              text-align: center;
+              text-transform: uppercase;
+              opacity: 10;
+              z-index: 10;
+            }
+
+            .statys{
+              margin: 40px 0 0 0;
+              color:$ct_navigat;
+              font-family: $font_family_basic;
+              font-size: $fs_features_p;
+              text-align: center;
+            }
+
+            .line_break{
+              margin: 15px 0;
+              width: 133px;
+              height: 1px;
+              background-color: $ct_affers_link_acttive;
+            }
+
+            .mail,
+            .phone{
+              display: flex;
+              margin-bottom: 15px;
+
+              img{
+                margin-right: 15px;
+              }
+
+              p{
+                margin: 0;
+                color: $bg_col_banner;
+                font-size: 12px;
+                text-align: center;
+                font-family: $font_family_second;
+              }
+            }
+
+            &:hover{
+              &:hover{
+                .item_image{
+                  .item_image_hover{
+                    opacity: 1;
+                    z-index: 1;
+                    transform: scale(1);
+                  }
+                }
+
+                .name_link{
+                  background-color: $bg_col_icon_offers;
+                }
+              }
+            }
+          }
+
+          .active_item_carousel{
+
+              .item_image{
+                .item_image_hover{
+                  opacity: 1;
+                  z-index: 1;
+                  transform: scale(1);
+                }
+              }
+
+              .name_link{
+                background-color: $bg_col_icon_offers;
+              }
+          }
+        }
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next{
+        display: initial;
+        margin: 0;
+        padding: 0;
+        top: -40px;
+        bottom: initial;
+        opacity: 1;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

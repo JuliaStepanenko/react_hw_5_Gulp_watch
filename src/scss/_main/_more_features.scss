@@ -1,0 +1,91 @@
+.more_features{
+  padding: 80px 0 55px;
+  background-color: $bg_col_more_fuat;
+
+  .container{
+    .row{
+
+      .more_features__items{
+        display: flex;
+        margin-bottom: 50px;
+
+        .gobelin{
+          margin-right: 20px;
+          height: 70px;
+          @extend %gobelin_color_back;
+          width: 40px;
+          background-size: 50% 100%;
+          background-repeat: no-repeat;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+
+          div{
+            height: 50px;
+            @extend %display_j_center;
+            @extend %gobelin_color_front;
+            width: 40px;
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            img{
+              width: 50%;
+            }
+          }
+        }
+
+
+        .active_gobelin,
+        .gobelin:hover{
+          width: 40px;
+          height: 70px;
+          background: linear-gradient(-35deg, transparent 14px, #404040 0) right, linear-gradient(35deg, transparent 14px, #404040 0) left;
+          background-size: 50% 100%;
+          background-repeat: no-repeat;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          margin-right: 20px;
+
+          div{
+            width: 40px;
+            height: 50px;
+            background: linear-gradient(-35deg, transparent 14px, #00a99d 0) right, linear-gradient(35deg, transparent 14px, #00a99d 0) left;
+            background-size: 50% 100%;
+            background-repeat: no-repeat;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            @extend %display_j_center;
+          }
+        }
+
+        .more_features__text{
+
+          h4{
+            color: $ct_navigat;
+            font-family: $font_family_h1;
+            font-size: $fs_h4_items;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+
+          .more_features__text_title{
+            color: $ct_features_p;
+            font-family: $font_family_basic;
+            font-size: $fs_features_p;
+            margin-bottom: 5px;
+          }
+
+          p{
+            max-width: 83%;
+            color: $ct_offers_p;
+            font-family: $font_family_basic;
+            font-size: $fs_h4_items;
+            line-height: $lh_main_text;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

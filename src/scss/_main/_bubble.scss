@@ -1,0 +1,40 @@
+.bubble{
+  padding: 60px 0;
+  background-color: $bg_col_banner;
+
+  .container{
+    .row{
+      .item_bubble{
+        display: flex;
+        align-items: center;
+
+        p{
+          margin: 0;
+          color: $bg_col_icon_offers;
+          font-family: $font_family_h1;
+          font-size: $fs_banner_p_style;
+          img{
+            width: 3%;
+          }
+        }
+
+        a{
+          box-shadow: 0 0 7px rgb(0 0 0 / 50%);
+          padding: 15px;
+          display: block;
+          margin-top: 20px;
+          color: $ct_banner_secjnd;
+          font-family: $font_family_h1;
+          font-size: $fs_nav_link;
+          background-color: $bG_col_offers_active;
+          border-radius: 5px;
+          text-decoration: none;
+          text-transform: uppercase;
+          img{
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

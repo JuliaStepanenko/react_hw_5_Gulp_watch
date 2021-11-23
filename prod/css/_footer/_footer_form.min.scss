@@ -1,0 +1,73 @@
+.footer_form{
+  padding: 80px 0 80px 0;
+  background-color: #383838;
+  background-image: url("../images/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .container{
+    position: relative;
+
+      .row{
+        form{
+          padding: 20px;
+          border: 1px solid $ct_features_p;
+          background-color: $bg_col_more_fuat;
+          border-radius: 5px;
+          max-width: 370px;
+
+          input,
+          textarea{
+            color: $ct_features_p;
+            background-color: $bg_col_more_fuat;
+            border: 1px solid $ct_features_p;
+            font-family: $font_family_basic;
+            font-size: $fs_features_p;
+            font-style: italic;
+            resize: none;
+            margin-bottom: 20px;
+            box-shadow: none;
+
+            &:hover{
+              box-shadow: 3px -3px 7px 0rem $bG_col_offers_active;
+            }
+          }
+
+          button{
+            border:none;
+            background-color: $bG_col_offers_active;
+            color: $ct_banner_secjnd;
+            width: 100%;
+            font-family: $font_family_h1;
+            font-size: $fs_nav_link;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: none;
+
+            &:hover{
+              box-shadow: 0 0 7px 0 #212529cc;
+            }
+          }
+        }
+      }
+
+      .point_map{
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        img{
+          width: 60%;
+        }
+      }
+  }
+}
+
+@media (max-width: 992px){
+
+  .footer_form{
+    .point_map {
+      display: none;
+    }
+  }
+}
